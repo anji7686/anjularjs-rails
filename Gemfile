@@ -32,7 +32,7 @@ gem 'spring',        group: :development
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use unicorn as the app server
-
+gem 'angular-rails-templates'
 # gem 'unicorn'
 
 # Use Capistrano for deployment
