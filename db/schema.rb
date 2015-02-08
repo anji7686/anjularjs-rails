@@ -11,6 +11,35 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20141121043829) do
+
+  create_table "profiles", force: true do |t|
+    t.string   "address1"
+    t.string   "address2"
+    t.string   "address3"
+    t.string   "street"
+    t.string   "city"
+    t.string   "state"
+    t.string   "country"
+    t.string   "mobile"
+    t.string   "location"
+    t.string   "zipcode"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", force: true do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "email"
+    t.string   "username"
+    t.string   "password"
+    t.string   "reset_password_token"
+    t.string   "password_confirmation"
+    t.string   "phone"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
